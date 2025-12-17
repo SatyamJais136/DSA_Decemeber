@@ -19,7 +19,6 @@ public:
 
     int shipWithinDays(vector<int>& weights, int days) {
         int n = weights.size();
-        int min = INT_MAX;
         int maxi = 0;
         int sum = 0;
         for(int i = 0; i < n; i++){
@@ -37,6 +36,6 @@ public:
             }
             else l = mid + 1;
         }
-        return ans;
+        return l;
     }
 };
